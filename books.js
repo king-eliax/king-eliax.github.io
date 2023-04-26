@@ -52,27 +52,27 @@ function loadBooksFromServer(){
         var newItem = document.createElement("li");
         
         var titleDiv = document.createElement("div");
-        titleDiv.innerHTML = book.Title;
+        titleDiv.innerHTML = book.title;
         titleDiv.classList.add("book-title");
         newItem.appendChild(titleDiv);
 
         var authorDiv = document.createElement("div");
-        authorDiv.innerHTML = book.Author;
+        authorDiv.innerHTML = book.author;
         authorDiv.classList.add("book-author");
         newItem.appendChild(authorDiv);
 
         var pubdateDiv = document.createElement("div");
-        pubdateDiv.innerHTML = book.Pubdate;
+        pubdateDiv.innerHTML = book.pubdate;
         pubdateDiv.classList.add("book-pubdate");
         newItem.appendChild(pubdateDiv);
 
         var isbnDiv = document.createElement("div");
-        isbnDiv.innerHTML = book.ISBN;
+        isbnDiv.innerHTML = book.isbn;
         isbnDiv.classList.add("book-isbn");
         newItem.appendChild(isbnDiv);
 
         var genreDiv = document.createElement("div");
-        genreDiv.innerHTML = book.Genre;
+        genreDiv.innerHTML = book.genre;
         genreDiv.classList.add("book-genre");
         newItem.appendChild(genreDiv);
   
