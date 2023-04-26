@@ -1,0 +1,10 @@
+body { 
+    background-image: url(education.jpg); 
+    color:gold; 
+    text-align: center;
+    background-size: cover;}
+h1{font-family: cursive; font-size: 500%;}
+#my-course-list{font-style: italic;font-size:300%;}
+#add-course-button{padding: 15px;background-color:pink}
+#random-course-button{padding: 15px;background-color:grey;}
+#course-name {border:2px solid black; border-radius:70px; width:50%; padding:12px 20px;}
