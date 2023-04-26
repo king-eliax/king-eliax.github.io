@@ -52,27 +52,27 @@ function loadBooksFromServer(){
         var newItem = document.createElement("li");
         
         var titleDiv = document.createElement("div");
-        titleDiv.innerHTML = book.title;
+        titleDiv.innerHTML = book.Title;
         titleDiv.classList.add("book-title");
         newItem.appendChild(titleDiv);
 
         var authorDiv = document.createElement("div");
-        authorDiv.innerHTML = book.author;
+        authorDiv.innerHTML = book.Author;
         authorDiv.classList.add("book-author");
         newItem.appendChild(authorDiv);
 
         var pubdateDiv = document.createElement("div");
-        pubdateDiv.innerHTML = book.pubdate;
+        pubdateDiv.innerHTML = book.Pubdate;
         pubdateDiv.classList.add("book-pubdate");
         newItem.appendChild(pubdateDiv);
 
         var isbnDiv = document.createElement("div");
-        isbnDiv.innerHTML = book.isbn;
+        isbnDiv.innerHTML = book.ISBN;
         isbnDiv.classList.add("book-isbn");
         newItem.appendChild(isbnDiv);
 
         var genreDiv = document.createElement("div");
-        genreDiv.innerHTML = book.genre;
+        genreDiv.innerHTML = book.Genre;
         genreDiv.classList.add("book-genre");
         newItem.appendChild(genreDiv);
   
@@ -80,7 +80,7 @@ function loadBooksFromServer(){
         var deleteButton = document.createElement("button");
         deleteButton.innerHTML = "Delete";
         deleteButton.onclick = function(){
-          if (confirm("Are you sure you want to delete " + book.Title + "?")){
+          if (confirm("Are you sure you want to delete " + book.title + "?")){
             deleteBookFromServer(book.id);
           }
         };
