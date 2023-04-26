@@ -121,6 +121,7 @@ loadBooksFromServer();
 
 function deleteBookFromServer(bookId) {
   fetch("https://s23-deploy-king-eliax-production.up.railway.app/books/" + bookId, {
+    credentials: 'include',
     method: "DELETE"
   }).then(function (response) {
     if (response.status == 200) {
